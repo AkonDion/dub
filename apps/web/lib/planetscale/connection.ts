@@ -9,11 +9,6 @@ const client = new Client({
       ...init,
       cache: "no-store",
     });
-  },
-  ssl: {
-    rejectUnauthorized: true,
-    minVersion: 'TLSv1.2',
-    maxVersion: 'TLSv1.3'
   }
 });
 const adapter = new PrismaPlanetScale(client);
