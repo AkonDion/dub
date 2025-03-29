@@ -11,7 +11,9 @@ const client = new Client({
     });
   },
   ssl: {
-    rejectUnauthorized: true
+    rejectUnauthorized: true,
+    minVersion: 'TLSv1.2',
+    maxVersion: 'TLSv1.3'
   }
 });
 const adapter = new PrismaPlanetScale(client);
