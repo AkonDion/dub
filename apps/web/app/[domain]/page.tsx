@@ -1,7 +1,7 @@
 import { constructMetadata } from "@dub/utils";
 import PlaceholderContent from "./placeholder";
 
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 export function generateMetadata({ params }: { params: { domain: string } }) {
   const title = `${params.domain.toUpperCase()} - A ${

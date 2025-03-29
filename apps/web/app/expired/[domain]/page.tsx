@@ -8,7 +8,7 @@ import { CircleHalfDottedClock, Footer, Nav, NavMobile } from "@dub/ui";
 import { cn, constructMetadata, createHref } from "@dub/utils";
 import { redirect } from "next/navigation";
 
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 export const metadata = constructMetadata({
   title: "Expired Link",

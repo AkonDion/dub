@@ -6,7 +6,7 @@ import { LOCALHOST_IP } from "@dub/utils";
 import { ipAddress, waitUntil } from "@vercel/functions";
 import { NextResponse } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",

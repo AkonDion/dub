@@ -9,7 +9,10 @@ import { ipAddress, waitUntil } from "@vercel/functions";
 import { AxiomRequest, withAxiom } from "next-axiom";
 import { NextResponse } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "experimental-edge";
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",

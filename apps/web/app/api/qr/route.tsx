@@ -8,7 +8,7 @@ import { DUB_QR_LOGO, getSearchParams, isDubDomain } from "@dub/utils";
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
