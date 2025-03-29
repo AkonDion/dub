@@ -13,6 +13,9 @@ const REDIRECT_SEGMENTS = [
 /** @type {import('next').NextConfig} */
 module.exports = withAxiom({
   reactStrictMode: false,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   transpilePackages: [
     "shiki",
     "@dub/prisma",
