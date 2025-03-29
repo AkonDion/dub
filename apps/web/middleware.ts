@@ -19,6 +19,8 @@ import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
 import PartnersMiddleware from "./lib/middleware/partners";
 import { supportedWellKnownFiles } from "./lib/well-known";
 
+export const runtime = 'nodejs';
+
 export const config = {
   matcher: [
     /*
